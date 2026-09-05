@@ -1149,7 +1149,7 @@ terms of each integrated service.
 
 License
 
-Add the project's chosen license here.
+
 
 Rally
 
