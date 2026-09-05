@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: rally-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: rallypass
+      POSTGRES_DB: rally
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - rally_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  rally_postgres_data:
